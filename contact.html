@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact Us</title>
+</head>
+<style>
+     
+body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+}
+
+
+.container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        flex-direction: column;
+}
+
+
+.home-btn {
+        background-color: #e44040;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: bold;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+        transition: background 0.3s ease;
+}
+
+.home-btn:hover {
+        background-color: #cc0000;
+}
+
+
+.contact-form {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 60px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px #ff0000;
+        width: 500px;
+        height: 500px;
+        
+}
+
+.contact-form h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        text-align: center;
+        color: #ff0000;
+}
+
+
+.input-group {
+        position: relative;
+        margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group textarea {
+        width: 100%;
+        padding: 15px;
+        background: #2e0a0a;
+        border: none;
+        border-bottom: 2px solid #ff0000;
+        color: #fff;
+        font-size: 16px;
+        outline: none;
+        transition: border-color 0.3s ease;
+}
+
+.input-group label {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        color: #777;
+        font-size: 16px;
+        pointer-events: none;
+        transition: 0.3s ease;
+}
+
+.input-group input:focus~label,
+.input-group textarea:focus~label,
+.input-group input:not(:placeholder-shown)~label,
+.input-group textarea:not(:placeholder-shown)~label {
+        top: -15px;
+        left: 0;
+        color: #ff0000;
+        font-size: 14px;
+}
+.contact-form button {
+        width: 100%;
+        padding: 10px;
+        background-color: #ff0000;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        border-radius: 5px;
+}
+
+.contact-form button:hover {
+        background-color: #cc0000;
+}
+
+</style>
+
+<body background="C:\Users\acer\Downloads\logo.image\bitnob.jpg"> </body>
+    <div class="container">
+        <a href="D:\Personal Portfolio Website.html" class="home-btn">Home</a>
+        <form class="contact-form">
+            <h2>Contact Us</h2>
+            <div class="input-group">
+                <input type="text" id="name" name="name" required />
+                <label for="name">Name</label>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" name="email" required />
+                <label for="email">Email</label>
+            </div>
+            <div class="input-group">
+                <textarea id="message" name="message" required></textarea>
+                <label for="message">Message</label>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
